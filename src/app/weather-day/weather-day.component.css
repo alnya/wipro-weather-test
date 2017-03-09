@@ -1,0 +1,14 @@
+.periods {
+    list-style: none;
+    margin:0; 
+    padding:0;
+}
+
+.periods li {
+    list-style: none;
+
+}
+
+.periods li img {
+   float:left;
+}

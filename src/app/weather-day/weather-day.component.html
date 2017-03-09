@@ -1,0 +1,11 @@
+<h2>{{day.key}}</h2>
+
+<ul class="periods">
+  <li *ngFor="let period of day.value">
+    <img src="http://openweathermap.org/img/w/{{period.weather[0].icon}}.png" alt="{{period.weather[0].description}}">
+    <h3>{{period.dt * 1000 | date:'shortTime'}} </h3>
+     <p>
+      <span>Temp: {{period.main.temp_max | number}}°C</span>
+    </p>
+  </li>
+</ul>

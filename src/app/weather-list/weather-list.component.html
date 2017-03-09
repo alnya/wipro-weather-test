@@ -1,0 +1,3 @@
+<div ng-if="weatherData" *ngFor="let day of weatherData | groupby:'dt'" class="weatherday">
+    <app-weather-day [day]=day></app-weather-day>
+</div>
